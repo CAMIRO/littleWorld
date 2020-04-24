@@ -1,0 +1,31 @@
+{
+  "name": "littleworld",
+  "version": "1.0.0",
+  "description": "traditional exotic cuisine - fastfood",
+  "main": "server.js",
+  "scripts": {
+    "stast": "node server.js",
+    "server": "nodemon server.js"
+  },
+  "keywords": [
+    "restaurant",
+    "fastfood",
+    "exotic cuisine",
+    "mexican food",
+    "colombian food",
+    "taiwan",
+    "taipei",
+    "food Delivery"
+  ],
+  "author": "juan sarmiento",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "express": "^4.17.1",
+    "express-graphql": "^0.9.0",
+    "graphql": "^15.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
