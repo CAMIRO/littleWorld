@@ -1,13 +1,14 @@
 import React from 'react';
+import  { Test } from './components/test'
 
-interface Props {
-  //text: string;
-}
 
-const App: React.FC<Props> = () => {
+
+
+const App: React.FC = () => {
   return (
   <div>
       little World
+      <Test text='hello' />
   </div> 
     
   );
