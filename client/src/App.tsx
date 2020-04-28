@@ -5,6 +5,8 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import { AppNavBar } from './components/AppNavBar';
+
 
 
 const App: React.FC = () => {
@@ -22,6 +24,7 @@ function Users() {
 }
   return (
      <Wrapper>
+       <AppNavBar/>
         <nav>
           <ul>
             <li>
@@ -45,10 +48,11 @@ function Users() {
           <Route path="/users">
             <Users />
           </Route>
-          <Route path="/">
+          <Route exact path="/">
             <Home />
           </Route>
         </Switch>
+        
       </Wrapper>
   );
 }
