@@ -1,6 +1,5 @@
 import React from 'react';
 import  { Test } from './components/test'
-import  ReducerExample from './components/ReducerExample'
 
 
 
@@ -11,9 +10,9 @@ const App: React.FC = () => {
       <Test 
         text='hello'
         person={{ firstName: "", lastName: "" }}
+        handleChange={() => console.log('from App')}
       />
-      <ReducerExample
-      />
+      
   </div> 
     
   );
