@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import { Link } from "react-router-dom";
 
@@ -26,12 +26,12 @@ import { Link } from "react-router-dom";
               </MenuItem>
            <MenuItem>
             <li  onClick={isSelected}>
-                <Link to="/about">Fast Food</Link>
+                <Link to="/fastfood">Fast Food</Link>
               </li>
            </MenuItem>
            <MenuItem>
            <li onClick={isSelected}>
-                <Link to="/users">Contact</Link>
+                <Link to="/contact">Contact</Link>
               </li>
            </MenuItem>
             </ul>
