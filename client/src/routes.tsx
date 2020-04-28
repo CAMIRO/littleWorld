@@ -11,11 +11,11 @@ interface routesProps {
 }
 
 export const Routes: React.FC<routesProps> = ({}) => {
-    
+
     return (
         <>
         <Switch>
-        <Route path="/fastfood">
+        <Route path="/fastFood">
             <FastFood />
         </Route>
         <Route path="/contact">

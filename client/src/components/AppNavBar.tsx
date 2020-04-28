@@ -26,7 +26,7 @@ import { Link } from "react-router-dom";
               </MenuItem>
            <MenuItem>
             <li  onClick={isSelected}>
-                <Link to="/fastfood">Fast Food</Link>
+                <Link to="/fastFood">Fast Food</Link>
               </li>
            </MenuItem>
            <MenuItem>
