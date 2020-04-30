@@ -1,35 +1,54 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Carousel, Button } from 'react-bootstrap'
+import ReactGA from 'react-ga'
 
 interface DessertsProps {
 
 }
 
 export const Desserts: React.FC<DessertsProps> = ({ }) => {
+
+    const mainCTAButton = (id: number) => {
+
+        const clickHandler = () => {
+            ReactGA.event({
+                category: 'Button',
+                action: `mainCTA clicked id: ${id}`
+            })
+        }
+
+        return (
+            <Button onClick={clickHandler}>CTA</Button>
+        )
+    }
     return (
         <Wrapper>
             <Content>
                 <Carousel>
                     <Carousel.Item>
-                        <Button>hello</Button>
+                        <CarouselWrapper>
+                            {mainCTAButton(1)}
+                        </CarouselWrapper>
+
                         <Carousel.Caption>
-                            <h3>First slide label</h3>
-                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <Button>hello2</Button>
+                        <CarouselWrapper>
+                            {mainCTAButton(2)}
+                        </CarouselWrapper>
                         <Carousel.Caption>
-                            <h3>Second slide label</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <Button>hello3</Button>
+                        <CarouselWrapper>
+                            {mainCTAButton(3)}
+                        </CarouselWrapper>
                         <Carousel.Caption>
-                            <h3>Third slide label</h3>
-                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
@@ -46,4 +65,9 @@ const Wrapper = styled.div`
 `
 const Content = styled.div`
      height: 6500px;
-` 
+`
+const CarouselWrapper = styled.div`
+display: flex;
+align-items: center;
+  justify-content: center;
+`
