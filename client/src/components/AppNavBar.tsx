@@ -4,42 +4,43 @@ import { Link } from "react-router-dom";
 
 
 
- export const AppNavBar: React.FC  = () => {
+export const AppNavBar: React.FC = () => {
 
 
-    const isSelected = () => {
+  const isSelected = () => {
     return true
   }
 
-    return (
-        <Wrapper>
-          <LogoContainer>
-            <Logo>logo</Logo> 
-          </LogoContainer>
-          <MenuContainer>
-          <nav>
-            <ul>
-              <MenuItem>   
-                <li onClick={isSelected}>
-                  <Link to="/">Desserts</Link>
-                </li>
-              </MenuItem>
-           <MenuItem>
-            <li  onClick={isSelected}>
+  return (
+    <Wrapper>
+      <LogoContainer>
+        <Logo src="/logo.png" alt="Logo" />
+
+      </LogoContainer>
+      <MenuContainer>
+        <nav>
+          <ul>
+            <MenuItem>
+              <li onClick={isSelected}>
+                <Link to="/">Desserts</Link>
+              </li>
+            </MenuItem>
+            <MenuItem>
+              <li onClick={isSelected}>
                 <Link to="/fastFood">Fast Food</Link>
               </li>
-           </MenuItem>
-           <MenuItem>
-           <li onClick={isSelected}>
+            </MenuItem>
+            <MenuItem>
+              <li onClick={isSelected}>
                 <Link to="/contact">Contact</Link>
               </li>
-           </MenuItem>
-            </ul>
-          </nav>
-          </MenuContainer>
-        </Wrapper>
-       
-    )
+            </MenuItem>
+          </ul>
+        </nav>
+      </MenuContainer>
+    </Wrapper>
+
+  )
 }
 const Wrapper = styled.div`
   width: 96px;
@@ -62,20 +63,14 @@ const LogoContainer = styled.div`
   align-items: center;
 `
 
-const Logo = styled.a`
-  background: #884FFC;
+const Logo = styled.img`
+  background: transparent;
   cursor: pointer;
-  padding: 8px;
-  width: 38px;
-  height: 38px;
-  border-radius: 4px;
+  width: 68px;
+  height: 68px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  svg {
-    min-width: 100%;
-    min-height: 100%;
-  }
 `
 const MenuContainer = styled.div`
   flex: 1;
