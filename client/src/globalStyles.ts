@@ -11,7 +11,7 @@ const GlobalStyles = createGlobalStyle`
     width: 100%;
     height: 100%;
     overflow: hidden;
-    font-family: 'Mind', sans-serif;
+    font-family: 'Mind', Courier, 'Courier New', monospace, ;
     -webkit-overflow-scrolling: touch;
     }
 `;
