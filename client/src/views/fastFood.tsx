@@ -1,7 +1,11 @@
-import React from 'react';
+import React from 'react'
 
-interface FastFoodProps {}
+interface FastFoodProps {
+
+}
 
 export const FastFood: React.FC<FastFoodProps> = ({}) => {
-  return <h2>Fast Food!</h2>;
-};
+        return (
+            <h2>Fast Food!</h2>
+        );
+}

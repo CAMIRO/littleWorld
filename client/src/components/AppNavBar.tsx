@@ -1,16 +1,21 @@
-import React from 'react';
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import React from 'react'
+import styled from 'styled-components'
+import { Link } from "react-router-dom";
+
+
 
 export const AppNavBar: React.FC = () => {
+
+
   const isSelected = () => {
-    return true;
-  };
+    return true
+  }
 
   return (
     <Wrapper>
       <LogoContainer>
         <Logo src="/logo.png" alt="Logo" />
+
       </LogoContainer>
       <MenuContainer>
         <nav>
@@ -34,8 +39,9 @@ export const AppNavBar: React.FC = () => {
         </nav>
       </MenuContainer>
     </Wrapper>
-  );
-};
+
+  )
+}
 const Wrapper = styled.div`
   width: 96px;
   min-width: 96px;
@@ -47,7 +53,7 @@ const Wrapper = styled.div`
   position: relative;
   flex-shrink: 0;
   height: 100vh;
-`;
+`
 
 const LogoContainer = styled.div`
   width: 100%;
@@ -55,7 +61,7 @@ const LogoContainer = styled.div`
   text-align: center;
   padding: 10px;
   align-items: center;
-`;
+`
 
 const Logo = styled.img`
   background: transparent;
@@ -65,7 +71,7 @@ const Logo = styled.img`
   display: inline-flex;
   align-items: center;
   justify-content: center;
-`;
+`
 const MenuContainer = styled.div`
   flex: 1;
   flex-shrink: 1;
@@ -73,7 +79,7 @@ const MenuContainer = styled.div`
   -webkit-box-flex: 1;
   overflow: auto;
   min-height: 66px;
-`;
+`
 const MenuItem = styled.div`
   height: 54px;
   width: 100%;
@@ -82,4 +88,4 @@ const MenuItem = styled.div`
   cursor: pointer;
   display: flex;
   justify-content: center;
-`;
+  `
