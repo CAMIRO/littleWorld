@@ -18,6 +18,7 @@ export const Desserts: React.FC<DessertsProps> = ({ }) => {
   };
   return (
     <Wrapper>
+
       <Content>
         <Carousel>
           <Carousel.Item>
@@ -34,6 +35,7 @@ export const Desserts: React.FC<DessertsProps> = ({ }) => {
             <Carousel.Caption></Carousel.Caption>
           </Carousel.Item>
         </Carousel>
+
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique. Sed arcu non odio euismod lacinia at. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Fermentum et sollicitudin ac orci phasellus. A erat nam at lectus urna. Venenatis urna cursus eget nunc. Justo laoreet sit amet cursus sit amet dictum sit. Quisque sagittis purus sit amet volutpat consequat mauris. Sed vulputate mi sit amet mauris. Orci phasellus egestas tellus rutrum tellus pellentesque eu tincidunt tortor.
 
         Mauris ultrices eros in cursus turpis massa. Neque volutpat ac tincidunt vitae semper quis lectus nulla at. Vitae elementum curabitur vitae nunc sed. Tempus egestas sed sed risus pretium. Feugiat vivamus at augue eget arcu dictum. Felis donec et odio pellentesque diam. Diam donec adipiscing tristique risus nec feugiat in. Natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Sed sed risus pretium quam vulputate dignissim. Ut sem viverra aliquet eget sit amet tellus cras adipiscing. Maecenas ultricies mi eget mauris pharetra et. Turpis cursus in hac habitasse platea dictumst quisque sagittis purus. Purus faucibus ornare suspendisse sed. Gravida rutrum quisque non tellus orci ac auctor. Tincidunt lobortis feugiat vivamus at augue eget arcu dictum. Scelerisque viverra mauris in aliquam sem fringilla ut. Dignissim convallis aenean et tortor at risus. Adipiscing elit ut aliquam purus sit amet luctus venenatis lectus. Tincidunt vitae semper quis lectus nulla at. Rhoncus urna neque viverra justo nec.
@@ -233,19 +235,25 @@ export const Desserts: React.FC<DessertsProps> = ({ }) => {
         Nulla at volutpat diam ut. Libero nunc consequat interdum varius sit amet mattis. Morbi enim nunc faucibus a. Enim praesent elementum facilisis leo vel fringilla est. Tincidunt praesent semper feugiat nibh sed pulvinar proin. Sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi. Lectus nulla at volutpat diam ut venenatis tellus. Sed odio morbi quis commodo. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Amet venenatis urna cursus eget nunc scelerisque viverra mauris. Quam pellentesque nec nam aliquam. Amet porttitor eget dolor morbi non arcu risus. Feugiat nisl pretium fusce id velit. Nulla pharetra diam sit amet nisl suscipit. Urna et pharetra pharetra massa massa ultricies mi quis hendrerit. Ac orci phasellus egestas tellus. Bibendum neque egestas congue quisque egestas diam in. Laoreet non curabitur gravida arcu ac tortor dignissim convallis aenean. Libero enim sed faucibus turpis in eu mi bibendum.
 
 Amet porttitor eget dolor morbi non. Turpis egestas integer eget aliquet nibh praesent tristique. Fermentum dui faucibus in ornare quam viverra orci sagittis eu. Nibh sit amet commodo nulla facilisi nullam vehicula. Lacus viverra vitae congue eu consequat ac felis. Vestibulum morbi blandit cursus risus at ultrices mi tempus. Duis ultricies lacus sed turpis tincidunt. Ac auctor augue mauris augue neque gravida in. Viverra mauris in aliquam sem fringilla ut morbi. Egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate sapien. Enim diam vulputate ut pharetra sit amet aliquam id. Vulputate ut pharetra sit amet aliquam id. Purus in mollis nunc sed id semper. Lacinia quis vel eros donec ac odio tempor. Convallis a cras semper auctor. Sapien eget mi proin sed libero enim sed. Morbi tempus iaculis urna id volutpat. Ornare aenean euismod elementum nisi quis eleifend quam adipiscing. Eget aliquet nibh praesent tristique magna sit amet purus gravida. Aliquet lectus proin nibh nisl condimentum id venenatis a condimentum.</p>
+
       </Content>
+
     </Wrapper>
   );
 };
 // TODO: Adjust the height in Wrapper div
 const Wrapper = styled.div`
-  padding: 20px;
-  width: inherit;
-  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
 `;
 const Content = styled.div`
-  height: 6500px;
+  width: 100%;
+  overflow: auto;
 `;
+
 const CarouselWrapper = styled.div`
   display: flex;
   align-items: center;

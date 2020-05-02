@@ -54,7 +54,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   position: relative;
   flex-shrink: 0;
-  height: 100vh;
+  height: '100%' 
 `
 
 const LogoContainer = styled.div`
