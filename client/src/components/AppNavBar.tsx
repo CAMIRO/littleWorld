@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Link } from "react-router-dom";
 
-
+import { Text } from "../containers/language";
 
 export const AppNavBar: React.FC = () => {
 
@@ -22,7 +22,9 @@ export const AppNavBar: React.FC = () => {
           <ul>
             <MenuItem>
               <li onClick={isSelected}>
-                <Link to="/">Desserts</Link>
+                <Link to="/">
+                  <Text tid="exploreHeader" />
+                </Link>
               </li>
             </MenuItem>
             <MenuItem>

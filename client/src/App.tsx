@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { AppNavBar } from "./components/AppNavBar";
-import LanguageSelector from "./components/languageSelector";
 import { LanguageProvider } from "./containers/language";
 import { Routes } from "./routes";
 
@@ -10,7 +9,6 @@ const App: React.FC = () => {
     <LanguageProvider>
       <Wrapper>
         <AppNavBar />
-        <LanguageSelector />
         <Routes />
       </Wrapper>
     </LanguageProvider>
