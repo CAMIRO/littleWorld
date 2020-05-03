@@ -13,11 +13,8 @@ export const AppNavBar: React.FC = () => {
 
   return (
     <Wrapper>
-      <LogoContainer>
-        <Logo src="/logo.png" alt="Logo" />
-
-      </LogoContainer>
       <MenuContainer>
+        <Logo src="/logo.png" alt="Logo" />
         <nav>
           <ul>
             <MenuItem>
@@ -50,37 +47,20 @@ const Wrapper = styled.div`
   z-index: 102;
   box-shadow: inset -7px 0px 22px -7px rgba(0, 0, 0, 0.18);
   border-right: 1px solid #e4e4e4;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  flex-shrink: 0;
-  height: '100%' 
 `
-
-const LogoContainer = styled.div`
-  width: 100%;
-  height: auto;
-  text-align: center;
-  padding: 10px;
-  align-items: center;
-`
-
 const Logo = styled.img`
   background: transparent;
   cursor: pointer;
   width: 68px;
   height: 68px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
 `
 const MenuContainer = styled.div`
-  flex: 1;
-  flex-shrink: 1;
-  flex-basis: 0px;
-  -webkit-box-flex: 1;
-  overflow: auto;
   min-height: 66px;
+  position: fixed;
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `
 const MenuItem = styled.div`
   height: 54px;
