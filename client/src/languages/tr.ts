@@ -1,11 +1,13 @@
 const tr = {
-  id: 1,
   exploreHeader: "Keşfet",
   welcomeDescription:
     "React Context API ile çok dil destekli web sitesi örneği",
   clickMe: "Bana tıkla",
   aboutMe: "Yazar hakkinda daha fazlabilgi için..",
   buttonClicked: "Butona tıkladın!",
+  nav: {
+    first: 'hello'
+  }
 };
 
 export default tr;

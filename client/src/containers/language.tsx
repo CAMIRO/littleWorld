@@ -1,7 +1,12 @@
 import React, { useState, createContext, useContext } from "react";
 
 import { languageOptions, dictionaryList } from "../languages";
-type GenericObject = { [key: string]: any };
+
+
+const genericFun = (arg: object) => {
+  return () => arg
+}
+
 // create the language context with default selected language
 export const LanguageContext = createContext({
   language: languageOptions[0],
@@ -29,7 +34,7 @@ export const LanguageProvider: React.FC<{}> = ({ children }) => {
     </LanguageContext.Provider>
   );
 };
-
+type GenericObject = { [key: string]: any };
 // get text according to id & current language
 export const Text = ({ tid }: GenericObject) => {
   const languageContext = useContext(LanguageContext);
