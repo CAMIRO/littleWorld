@@ -51,14 +51,13 @@ const MenuContainer = styled.div`
 const Logo = styled.img`
   background: transparent;
   cursor: pointer;
-  width: 68px;
   height: 68px;
+  padding: 5px;
 `
-
 const Nav = styled.nav`
 li:hover {
     color: #7c8593;
-    border-left: 2px solid #884ffc;
+    border-left: 4px solid #68C3C8;
     box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.1);
     a {
       color: #7c8593;
