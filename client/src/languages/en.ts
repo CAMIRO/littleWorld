@@ -1,4 +1,5 @@
 const en = {
+  id: 2,
   exploreHeader: "Explore",
   welcomeDescription:
     "This is a demo app for multi-language website with React Context API",

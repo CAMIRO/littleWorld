@@ -1,4 +1,5 @@
 const tr = {
+  id: 1,
   exploreHeader: "Keşfet",
   welcomeDescription:
     "React Context API ile çok dil destekli web sitesi örneği",
