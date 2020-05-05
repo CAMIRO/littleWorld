@@ -1,5 +1,5 @@
 const en = {
-  exploreHeader: "Explore",
+  exploreHeader: "Explore!",
   welcomeDescription:
     "This is a demo app for multi-language website with React Context API",
   clickMe: "Click Me",
