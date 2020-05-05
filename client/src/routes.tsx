@@ -6,6 +6,7 @@ import styled from 'styled-components'
 // Components
 import LanguageSelector from "./components/languageSelector";
 // Views
+import { Home } from "./views/home"
 import { Desserts } from "./views/desserts";
 import { FastFood } from "./views/fastFood";
 import Contact from "./views/contact";
@@ -30,8 +31,11 @@ export const Routes: React.FC<routesProps> = ({ }) => {
         <Route path="/contact">
           <Contact />
         </Route>
-        <Route exact path="/">
+        <Route path="/desserts">
           <Desserts />
+        </Route>
+        <Route exact path="/">
+          <Home />
         </Route>
       </Switch>
     </Wrapper>

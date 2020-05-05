@@ -17,7 +17,7 @@ export const AppNavBar: React.FC = () => {
               </Link>
             </LI>
             <LI>
-              <Link to="/">
+              <Link to="/desserts">
                 <Text tid="exploreHeader" />
               </Link>
             </LI>
@@ -85,6 +85,7 @@ a {
 // TODO: maybe y should do something like this
 const StyledLink = styled(Link)`
   text-decoration: none;
+  background-color: red;
 
   &:focus,
   &:hover,
