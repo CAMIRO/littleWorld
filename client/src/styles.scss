@@ -1,8 +1,8 @@
-$purple: #884ffc !default;
-$primary: $purple !default;
+$cyan: #68c3c8 !default;
+$primary: $cyan !default;
 $blue: #007bff !default;
 $link-color: $blue !default;
-$component-active-bg: $purple !default;
+$component-active-bg: $cyan !default;
 $custom-control-indicator-checked-disabled-bg: rgba($blue, 0.5) !default;
 $progress-bar-bg: $blue !default;
 $gray-200: #e9ecef !default;
@@ -12,15 +12,7 @@ $secondary: $gray-200 !default;
 
 @import "bootstrap/scss/bootstrap.scss";
 
-html,
-body,
-.react-wrapper {
-  width: 100%;
-  display: flex;
-  height: 100%;
-  overflow: hidden;
-  font-size: 0.95rem;
-}
+
 
 a:not([href]) {
   color: $link-color;
@@ -58,6 +50,7 @@ a,
 button,
 .btn {
   outline: none !important;
+  color: #fff;
 }
 
 .btn-light {
@@ -136,7 +129,7 @@ button,
   border-left-color: #fb9e00;
 }
 .bs-callout-info {
-  border-left-color: #884ffc;
+  border-left-color: #68c3c8;
 }
 .bs-callout-success {
   border-left-color: #14ce95;
@@ -228,7 +221,7 @@ ul.nav-links {
   background: #fb9e00;
 }
 .label-primary {
-  background: #884ffc;
+  background: #68c3c8;
 }
 .label-success {
   background: #14ce95;
@@ -263,7 +256,7 @@ ul.nav-links {
 }
 
 .text-primary {
-  color: #884ffc !important;
+  color: #68c3c8 !important;
 }
 
 .text-dark-grey {
@@ -296,7 +289,7 @@ ul.nav-links {
 
 .ReactVirtualized__Table__row:hover {
   background: rgba(0, 0, 0, 0.045);
-  border-left-color: #884ffc;
+  border-left-color: #68c3c8;
 }
 
 .ReactVirtualized__Table__headerTruncatedText {
@@ -391,11 +384,11 @@ ul.nav-links {
 /* List default theme */
 
 .Select-option.is-selected {
-  background-color: #884ffc;
+  background-color: #68c3c8;
   color: #fff;
 }
 .Select-option.is-focused {
-  background-color: #884ffc;
+  background-color: #68c3c8;
   color: #fff;
 }
 .is-focused > .Select-control {

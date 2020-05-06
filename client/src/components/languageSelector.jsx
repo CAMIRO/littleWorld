@@ -2,27 +2,30 @@ import React, { useContext } from "react";
 import { languageOptions } from "../languages";
 import { LanguageContext } from "../containers/language";
 import styled from "styled-components";
-import { Row, Col } from 'react-bootstrap';
+import { ToggleButton, ToggleButtonGroup } from 'react-bootstrap';
 
 const LanguageSelector = () => {
   const languageContext = useContext(LanguageContext);
 
   const handleLanguageChange = (event) => {
     const selectedLanguage = languageOptions.find(
-      (item) => item.id === event.target.value
+      (item) => item.id === event
     );
     // set selected language by calling context method
     languageContext.setLanguage(selectedLanguage);
   };
 
   return (
-    <Row>
-
-      <Col md={{ span: 4, offset: 4 }}>
-        <button value={'ch'} onClick={handleLanguageChange}>中文</button>
-        <button value={'en'} onClick={handleLanguageChange}>English</button>
-      </Col>
-    </Row>
+    <Wrapper>
+      <ToggleButtonGroup name="options" type="radio" defaultValue={"ch"} onChange={handleLanguageChange} >
+        <ToggleButton type="checkbox" name="radio" value={"ch"}>
+          中文
+        </ToggleButton>
+        <ToggleButton type="checkbox" name="radio" value={"en"}>
+          English
+        </ToggleButton>
+      </ToggleButtonGroup>
+    </Wrapper>
   );
 }
 export default LanguageSelector
@@ -30,7 +33,7 @@ export default LanguageSelector
 const Wrapper = styled.div`
   display: flex;
   min-height: 50px;
-  padding: 10px;
-  
+  padding: 15px;
+  flex-direction: row-reverse;
 `;
 
