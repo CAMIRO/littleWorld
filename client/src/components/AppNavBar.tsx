@@ -80,15 +80,16 @@ a {
       color: #7c8593;
       text-decoration: none;
       
+      
     }
 
 `
 const StyledLink = styled(Link)`
-  padding: 20px;
+  padding: 20px 0;
   text-decoration: none;
   text-align: center;
   width: 100%; 
-  align-self: center
+  align-self: center;
 
   &:focus,
   &:hover,
