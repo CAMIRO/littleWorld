@@ -1,7 +1,10 @@
 const en = {
   // NavBar
-  exploreHeader: "Desserts",
+  homeTab: "Desserts",
   // Carousel home
+  CaroTitleOne: "Title 1",
+  CaroTextOne: 'Text 1',
+  CaroCTA: 'SHOW ME MORE',
   welcomeDescription:
     "This is a demo app for multi-language website with React Context API",
   clickMe: "Click Me",

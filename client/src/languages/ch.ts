@@ -1,6 +1,6 @@
 const ch = {
   // NavBar
-  exploreHeader: "甜品",
+  homeTab: "甜品",
   // Carousel home
   welcomeDescription:
     "React Context API ile çok dil destekli web sitesi örneği",

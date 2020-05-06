@@ -18,7 +18,7 @@ export const AppNavBar: React.FC = () => {
             </LI>
             <LI>
               <Link to="/desserts">
-                <Text tid="exploreHeader" />
+                <Text tid="homeTab" />
               </Link>
             </LI>
             <LI>
