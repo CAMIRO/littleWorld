@@ -1,5 +1,7 @@
 const en = {
-  exploreHeader: "Explore!",
+  // NavBar
+  exploreHeader: "Desserts",
+  // Carousel home
   welcomeDescription:
     "This is a demo app for multi-language website with React Context API",
   clickMe: "Click Me",

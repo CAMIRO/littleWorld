@@ -13,7 +13,7 @@ export const Home: React.FC<Props> = () => {
                 action: `mainCTA clicked id: ${id}`,
             });
         };
-        return <Button onClick={clickHandler}>CTA</Button>;
+        return <Button variant='danger' onClick={clickHandler}>CTA</Button>;
     };
 
     return (
@@ -21,17 +21,43 @@ export const Home: React.FC<Props> = () => {
             <Content>
                 <Carousel>
                     <Carousel.Item>
-                        <CarouselWrapper>{mainCTAButton(1)}</CarouselWrapper>
+                        <img
+                            className="d-block w-100"
+                            src="https://picsum.photos/800/400?text=First slide&bg=373940"
+                            alt="First slide"
+                        />
 
-                        <Carousel.Caption></Carousel.Caption>
+                        <Carousel.Caption>
+                            <h3>First slide label</h3>
+                            {mainCTAButton(1)}
+                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <CarouselWrapper>{mainCTAButton(2)}</CarouselWrapper>
-                        <Carousel.Caption></Carousel.Caption>
+                        <img
+                            className="d-block w-100"
+                            src="https://picsum.photos/800/400?text=First slide&bg=373940"
+                            alt="First slide"
+                        />
+
+                        <Carousel.Caption>
+                            <h3>second slide label</h3>
+                            {mainCTAButton(2)}
+                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <CarouselWrapper>{mainCTAButton(3)}</CarouselWrapper>
-                        <Carousel.Caption></Carousel.Caption>
+                        <img
+                            className="d-block w-100"
+                            src="https://picsum.photos/800/400?text=First slide&bg=373940"
+                            alt="First slide"
+                        />
+
+                        <Carousel.Caption>
+                            <h3>Third slide label</h3>
+                            {mainCTAButton(3)}
+                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique. Sed arcu non odio euismod lacinia at. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Fermentum et sollicitudin ac orci phasellus. A erat nam at lectus urna. Venenatis urna cursus eget nunc. Justo laoreet sit amet cursus sit amet dictum sit. Quisque sagittis purus sit amet volutpat consequat mauris. Sed vulputate mi sit amet mauris. Orci phasellus egestas tellus rutrum tellus pellentesque eu tincidunt tortor.
@@ -239,13 +265,11 @@ Amet porttitor eget dolor morbi non. Turpis egestas integer eget aliquet nibh pr
     )
 }
 
-// TODO: Adjust the height in Wrapper div
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 100%;
-  padding: 40px;
 `;
 const Content = styled.div`
   width: 100%;

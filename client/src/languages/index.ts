@@ -1,14 +1,14 @@
-import tr from "./tr";
+import ch from "./ch";
 import en from "./en";
 
 type GenericObject = { [key: string]: any };
 
 export const dictionaryList: GenericObject = {
-  tr,
+  ch,
   en,
 };
 
 export const languageOptions: Array<GenericObject> = [
-  { id: "tr", text: "Turkce" },
+  { id: "ch", text: "中文" },
   { id: "en", text: "English" },
 ];

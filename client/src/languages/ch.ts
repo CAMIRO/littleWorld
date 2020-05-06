@@ -1,6 +1,7 @@
-const tr = {
+const ch = {
   // NavBar
-  exploreHeader: "Keşfes",
+  exploreHeader: "甜品",
+  // Carousel home
   welcomeDescription:
     "React Context API ile çok dil destekli web sitesi örneği",
   // Something else
@@ -9,4 +10,4 @@ const tr = {
   buttonClicked: "Butona tıkladın!",
 };
 
-export default tr;
+export default ch;
