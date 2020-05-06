@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { languageOptions } from "../languages";
 import { LanguageContext } from "../containers/language";
 import styled from "styled-components";
-import { Form, Row, Col } from 'react-bootstrap'
+import { Row, Col } from 'react-bootstrap';
 
 const LanguageSelector = () => {
   const languageContext = useContext(LanguageContext);
@@ -16,27 +16,21 @@ const LanguageSelector = () => {
   };
 
   return (
-    <Wrapper>
-      <Form.Row>
-        <Col md={{ span: 2, offset: 9 }}>
-          <Form.Group>
-            <Form.Control as={Col} size="sm" as="select" onChange={handleLanguageChange} value={languageContext.language.id}>
-              {languageOptions.map((item) => (
-                <option key={item.id} value={item.id}>
-                  {item.text}
-                </option>
-              ))}
-            </Form.Control>
-          </Form.Group>
-        </Col>
-      </Form.Row>
-    </Wrapper>
+    <Row>
+
+      <Col md={{ span: 4, offset: 4 }}>
+        <button value={'ch'} onClick={handleLanguageChange}>中文</button>
+        <button value={'en'} onClick={handleLanguageChange}>English</button>
+      </Col>
+    </Row>
   );
 }
 export default LanguageSelector
 
 const Wrapper = styled.div`
- min-height: 30px;
- padding: 20px 0;
+  display: flex;
+  min-height: 50px;
+  padding: 10px;
+  
 `;
 
