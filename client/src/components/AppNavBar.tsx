@@ -5,29 +5,33 @@ import { Text } from "../containers/language";
 
 export const AppNavBar: React.FC = () => {
 
+  const onchangeTab = () => {
+
+  }
+
   return (
     <Wrapper>
       <MenuContainer>
 
         <Nav>
-          <UL>
+          <ul>
             <LI>
-              <Link to="/">
+              <StyledLink to="/">
                 <Logo src="/logo.png" alt="Logo" />
-              </Link>
+              </StyledLink>
             </LI>
             <LI>
-              <Link to="/desserts">
+              <StyledLink to="/desserts">
                 <Text tid="homeTab" />
-              </Link>
+              </StyledLink>
             </LI>
             <LI>
-              <Link to="/fastFood">Fast Food</Link>
+              <StyledLink to="/dishes">Dishes</StyledLink>
             </LI>
             <LI>
-              <Link to="/contact">Contact</Link>
+              <StyledLink to="/contact">Contact</StyledLink>
             </LI>
-          </UL>
+          </ul>
         </Nav>
       </MenuContainer>
     </Wrapper>
@@ -65,27 +69,26 @@ li:hover {
     }
   }
 `
-const UL = styled.ul`
-`
-
 const LI = styled.li`
- display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-    height: 70px;
+   
     font-size: 13px;
     cursor: pointer;
 a {
       color: #7c8593;
       text-decoration: none;
+      
     }
 
 `
-
-// TODO: maybe y should do something like this
 const StyledLink = styled(Link)`
+  padding: 20px;
   text-decoration: none;
-  background-color: red;
+  text-align: center;
+  width: 100%; 
+  align-self: center
 
   &:focus,
   &:hover,

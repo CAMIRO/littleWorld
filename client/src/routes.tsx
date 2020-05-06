@@ -8,7 +8,7 @@ import LanguageSelector from "./components/languageSelector";
 // Views
 import { Home } from "./views/home"
 import { Desserts } from "./views/desserts";
-import { FastFood } from "./views/fastFood";
+import { Dishes } from "./views/dishes";
 import Contact from "./views/contact";
 
 interface routesProps { }
@@ -25,8 +25,8 @@ export const Routes: React.FC<routesProps> = ({ }) => {
     <Wrapper>
       <LanguageSelector />
       <Switch>
-        <Route path="/fastFood">
-          <FastFood />
+        <Route path="/dishes">
+          <Dishes />
         </Route>
         <Route path="/contact">
           <Contact />
