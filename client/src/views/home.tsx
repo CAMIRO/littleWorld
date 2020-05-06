@@ -13,7 +13,7 @@ export const Home: React.FC<Props> = () => {
                 action: `mainCTA clicked id: ${id}`,
             });
         };
-        return <Button variant='danger' onClick={clickHandler}>CTA</Button>;
+        return <Button onClick={clickHandler}>CTA</Button>;
     };
 
     return (

@@ -5,6 +5,7 @@ import ApolloClient from "apollo-boost";
 import { ApolloProvider } from "@apollo/react-hooks";
 import App from "./App";
 import GlobalStyles from "./globalStyles";
+import './styles.scss'
 
 const client = new ApolloClient({
   uri: "https://localhost:5000/graphql",
