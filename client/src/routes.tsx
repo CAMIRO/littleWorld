@@ -42,6 +42,7 @@ export const Routes: React.FC<routesProps> = ({ }) => {
   );
 };
 const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column
+  flex: 1;
+  flex-direction: column;
+ 
 `
