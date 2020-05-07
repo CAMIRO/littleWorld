@@ -5,6 +5,7 @@ import styled from 'styled-components'
 
 // Components
 import LanguageSelector from "./components/languageSelector";
+import { Footer } from "./components/footer"
 // Views
 import { Home } from "./views/home"
 import { Desserts } from "./views/desserts";
@@ -38,6 +39,7 @@ export const Routes: React.FC<routesProps> = ({ }) => {
           <Home />
         </Route>
       </Switch>
+      <Footer />
     </Wrapper>
   );
 };

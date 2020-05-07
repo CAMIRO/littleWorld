@@ -1,8 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import { AppNavBar } from "./components/AppNavBar";
+import { AppNavBar } from "./components/appNavBar";
 import { LanguageProvider } from "./containers/language";
 import { Routes } from "./routes";
+
 
 const App: React.FC = () => {
   return (

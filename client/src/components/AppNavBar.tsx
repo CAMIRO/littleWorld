@@ -3,41 +3,32 @@ import styled from 'styled-components'
 import { Link } from "react-router-dom";
 import { Text } from "../containers/language";
 
-export const AppNavBar: React.FC = () => {
-
-  const onchangeTab = () => {
-
-  }
-
-  return (
-    <Wrapper>
-      <MenuContainer>
-
-        <Nav>
-          <ul>
-            <LI>
-              <StyledLink to="/">
-                <Logo src="/logo.png" alt="Logo" />
-              </StyledLink>
-            </LI>
-            <LI>
-              <StyledLink to="/desserts">
-                <Text tid="homeTab" />
-              </StyledLink>
-            </LI>
-            <LI>
-              <StyledLink to="/dishes">Dishes</StyledLink>
-            </LI>
-            <LI>
-              <StyledLink to="/contact">Contact</StyledLink>
-            </LI>
-          </ul>
-        </Nav>
-      </MenuContainer>
-    </Wrapper>
-
-  )
-}
+export const AppNavBar: React.FC = () => (
+  <Wrapper>
+    <MenuContainer>
+      <Nav>
+        <ul>
+          <LI>
+            <StyledLink to="/">
+              <Logo src="/logo.png" alt="Logo" />
+            </StyledLink>
+          </LI>
+          <LI>
+            <StyledLink to="/desserts">
+              <Text tid="homeTab" />
+            </StyledLink>
+          </LI>
+          <LI>
+            <StyledLink to="/dishes">Dishes</StyledLink>
+          </LI>
+          <LI>
+            <StyledLink to="/contact">Contact</StyledLink>
+          </LI>
+        </ul>
+      </Nav>
+    </MenuContainer>
+  </Wrapper>
+)
 const Wrapper = styled.div`
   width: 96px;
   min-width: 98px;
