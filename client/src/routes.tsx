@@ -51,8 +51,9 @@ const Wrapper = styled.div`
   flex-direction: column;
 `
 const BodyWrapper = styled.div`
-  min-height: 100%;
-  margin-bottom: -50px;
-  /* Equal to height of footer */
+ /* Equal to height of footer */
   /* But also accounting for potential margin-bottom of last child */
+  min-height: 100%;
+  margin-bottom: -90px;
+ 
 `

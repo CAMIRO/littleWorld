@@ -227,6 +227,7 @@ const Wrapper = styled.div`
 const Content = styled.div`
   width: 100%;
   overflow: auto;
+  padding-bottom: 50px;
 `;
 
 const CarouselWrapper = styled.div`
