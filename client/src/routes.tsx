@@ -24,27 +24,35 @@ export const Routes: React.FC<routesProps> = ({ }) => {
 
   return (
     <Wrapper>
-      <LanguageSelector />
-      <Switch>
-        <Route path="/dishes">
-          <Dishes />
-        </Route>
-        <Route path="/contact">
-          <Contact />
-        </Route>
-        <Route path="/desserts">
-          <Desserts />
-        </Route>
-        <Route exact path="/">
-          <Home />
-        </Route>
-      </Switch>
+      <BodyWrapper>
+        <LanguageSelector />
+        <Switch>
+          <Route path="/dishes">
+            <Dishes />
+          </Route>
+          <Route path="/contact">
+            <Contact />
+          </Route>
+          <Route path="/desserts">
+            <Desserts />
+          </Route>
+          <Route exact path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </BodyWrapper>
       <Footer />
     </Wrapper>
   );
 };
 const Wrapper = styled.div`
+
   flex: 1;
   flex-direction: column;
- 
+`
+const BodyWrapper = styled.div`
+  min-height: 100%;
+  margin-bottom: -50px;
+  /* Equal to height of footer */
+  /* But also accounting for potential margin-bottom of last child */
 `

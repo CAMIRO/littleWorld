@@ -6,6 +6,7 @@ const GlobalStyles = createGlobalStyle`
         margin: 0; padding: 0;
     }
     html, body {
+    height: 100%;    
     font-family: 'Mind', Courier, 'Courier New', monospace, ;
     -webkit-overflow-scrolling: touch;
     }

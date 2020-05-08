@@ -11,4 +11,5 @@ export const Footer: React.FC = () => (
 const Wrapper = styled.div`
 flex: 1;
 background-color: green;
+min-height: -webkit-fill-available;
 `
