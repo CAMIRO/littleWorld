@@ -24,10 +24,11 @@ background-color: #68c3c8;
 `
 
 const MyRow = styled(Row)`
-border: 1px solid blue;
+
 font-size: 0.8rem;
 &:first-child  {
     min-height: 68px; 
+    border-bottom: 0.1px solid #009494;
 }
 `
 const MyCol = styled(Col)`
@@ -38,12 +39,12 @@ const MyCol = styled(Col)`
 const Credits = styled(Col)`
     text-align: center;
     font-size: 0.7rem;
-    margin-bottom: 5px;
+    padding: 10px 0;
 `
 const Atag = styled.a`
 color: #EC7637;
 &:hover {
 text-decoration: none;
-color: #FFFFFF;    
+color: #FFF;    
 }
 `

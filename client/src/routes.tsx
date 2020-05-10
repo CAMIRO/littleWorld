@@ -54,6 +54,6 @@ const BodyWrapper = styled.div`
  /* Equal to height of footer */
   /* But also accounting for potential margin-bottom of last child */
   min-height: 100%;
-  margin-bottom: -90px;
+  margin-bottom: -100px;
  
 `
