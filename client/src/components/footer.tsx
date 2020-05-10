@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Container, Row, Col } from 'react-bootstrap'
+import { Facebook, Instagram } from 'react-feather';
 export const Footer: React.FC = () => {
 
     const date = new Date();
@@ -10,7 +11,14 @@ export const Footer: React.FC = () => {
             <MyRow className="justify-content-md-center align-items-center" >
                 <MyCol sm={8}>For custom order requests, questions, or just to get in touch please email <Atag href="mailto: littleworld0326@gmail.com">littleworld0326@gmail.com</Atag></MyCol>
 
-                <MyCol sm={4}>row 1 - col 2</MyCol>
+                <MyCol sm={4} >
+                    <Row className="justify-content-around align-items-center" >
+                        <SocialBut onClick={() => console.log('heeey')}>
+                            <Facebook color="#FFF" size={22} />
+                        </SocialBut>
+                        <Instagram color="#FFF" size={22} />
+                    </Row>
+                </MyCol>
             </MyRow>
             <MyRow className="justify-content-md-center" >
                 <Credits>Little World - {currentYear}</Credits>
@@ -47,4 +55,8 @@ color: #EC7637;
 text-decoration: none;
 color: #FFF;    
 }
+`
+const SocialBut = styled.div`
+ background-color: 'red';
+
 `
