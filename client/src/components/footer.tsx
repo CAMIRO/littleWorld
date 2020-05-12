@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Container, Row, Col } from 'react-bootstrap'
-import { Facebook, Instagram } from 'react-feather';
+import { Facebook, Instagram, Youtube } from 'react-feather';
 export const Footer: React.FC = () => {
 
     const date = new Date();
@@ -16,7 +16,12 @@ export const Footer: React.FC = () => {
                         <SocialBut onClick={() => console.log('heeey')}>
                             <Facebook color="#FFF" size={22} />
                         </SocialBut>
-                        <Instagram color="#FFF" size={22} />
+                        <SocialBut onClick={() => console.log('heeey')}>
+                            <Instagram color="#FFF" size={22} />
+                        </SocialBut>
+                        <SocialBut onClick={() => console.log('heeey')}>
+                            <Youtube color="#FFF" size={22} />
+                        </SocialBut>
                     </Row>
                 </MyCol>
             </MyRow>
@@ -32,17 +37,15 @@ background-color: #68c3c8;
 `
 
 const MyRow = styled(Row)`
-
-font-size: 0.8rem;
-&:first-child  {
-    min-height: 68px; 
-    border-bottom: 0.1px solid #009494;
-}
+    font-size: 0.8rem;
+    &:first-child  {
+        min-height: 68px; 
+        border-bottom: 0.1px solid #009494;
+    }
 `
 const MyCol = styled(Col)`
     text-align: left;
-    padding-left: 40px;
-    
+    margin: 5px 0;
 `
 const Credits = styled(Col)`
     text-align: center;
@@ -56,7 +59,7 @@ text-decoration: none;
 color: #FFF;    
 }
 `
-const SocialBut = styled.div`
+const SocialBut = styled.a`
  background-color: 'red';
 
 `
