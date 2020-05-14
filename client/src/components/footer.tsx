@@ -53,10 +53,10 @@ const Credits = styled(Col)`
     padding: 10px 0;
 `
 const Atag = styled.a`
-color: #EC7637;
+color: #C82333; 
 &:hover {
 text-decoration: none;
-color: #FFF;    
+color: #FFF;   
 }
 `
 const SocialBut = styled.a`
