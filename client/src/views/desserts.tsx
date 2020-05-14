@@ -9,11 +9,11 @@ export const Desserts: React.FC<DessertsProps> = ({ }) => {
   return (
     <Wrapper>
       <Content>
-        <Container>
-          <Row>
-            <MyCol sm={4}>Column 1</MyCol>
-            <MyCol sm={4}>Column 2</MyCol>
-            <MyCol sm={4}>Column 2</MyCol>
+        <Container fluid >
+          <Row >
+            <MyCol xl={4} sm={4}>Column 1</MyCol>
+            <MyCol xl={4} sm={4}>Column 2</MyCol>
+            <MyCol xl={4} sm={4}>Column 2</MyCol>
             <MyCol sm={4}>Column 1</MyCol>
             <MyCol sm={4}>Column 2</MyCol>
             <MyCol sm={4}>Column 2</MyCol>
@@ -52,7 +52,7 @@ export const Desserts: React.FC<DessertsProps> = ({ }) => {
       </Content>
 
 
-    </Wrapper>
+    </Wrapper >
   );
 };
 const Wrapper = styled.div`
@@ -65,7 +65,7 @@ const Wrapper = styled.div`
 const Content = styled.div`
   width: 100%;
   overflow: auto;
-  padding-bottom: 100px;
+  padding: 0 15px 100px;
 `;
 const MyCol = styled(Col)`
    border: 1px solid red;
