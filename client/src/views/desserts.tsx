@@ -11,148 +11,58 @@ export const Desserts: React.FC<DessertsProps> = ({ }) => {
       <Content>
         <Container fluid >
           <Row >
-            <MyCol sm={4}>
-              <Card style={{ width: '100%' }}>
-                <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
-                  <Card.Text>
-                    Some quick example text to build on the card title and make up the bulk of
-                    the card's content.
-                  </Card.Text>
-                  <Button variant="primary">Go somewhere</Button>
-                </Card.Body>
+            <MyCol sm={3}>
+              <Card onClick={() => console.log('heey')} style={{ width: '100%' }}>
+                <Card.Img variant="top" src="https://picsum.photos/50/50?text=First cap" />
+                <Card.ImgOverlay className="column justify-content-end">
+                  <Card.Title>Card title</Card.Title>
+                </Card.ImgOverlay>
+
               </Card>
             </MyCol>
-            <MyCol sm={4}>
-              <Card style={{ width: '100%' }}>
-                <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
-                  <Card.Text>
-                    Some quick example text to build on the card title and make up the bulk of
-                    the card's content.
-                  </Card.Text>
-                  <Button variant="primary">Go somewhere</Button>
-                </Card.Body>
+            <MyCol sm={3}>
+              <Card onClick={() => console.log('heey')} style={{ width: '100%' }}>
+                <Card.Img variant="top" src="https://picsum.photos/50/50?text=First cap" />
+                <Card.ImgOverlay className="column justify-content-end">
+                  <Card.Title>Card title</Card.Title>
+                </Card.ImgOverlay>
+
               </Card>
             </MyCol>
-            <MyCol sm={4}>
-              <Card style={{ width: '100%' }}>
-                <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
-                  <Card.Text>
-                    Some quick example text to build on the card title and make up the bulk of
-                    the card's content.
-                  </Card.Text>
-                  <Button variant="primary">Go somewhere</Button>
-                </Card.Body>
+            <MyCol sm={3}>
+              <Card onClick={() => console.log('heey')} style={{ width: '100%' }}>
+                <Card.Img variant="top" src="https://picsum.photos/50/50?text=First cap" />
+                <Card.ImgOverlay className="column justify-content-end">
+                  <Card.Title>Card title</Card.Title>
+                </Card.ImgOverlay>
+
               </Card>
             </MyCol>
-            <MyCol sm={4}>
-              <Card style={{ width: '100%' }}>
-                <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
-                  <Card.Text>
-                    Some quick example text to build on the card title and make up the bulk of
-                    the card's content.
-                  </Card.Text>
-                  <Button variant="primary">Go somewhere</Button>
-                </Card.Body>
+            <MyCol sm={3}>
+              <Card onClick={() => console.log('heey')} style={{ width: '100%' }}>
+                <Card.Img variant="top" src="https://picsum.photos/50/50?text=First cap" />
+                <Card.ImgOverlay className="column justify-content-end">
+                  <Card.Title>Card title</Card.Title>
+                </Card.ImgOverlay>
+
               </Card>
             </MyCol>
-            <MyCol sm={4}>
-              <Card style={{ width: '100%' }}>
-                <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
-                  <Card.Text>
-                    Some quick example text to build on the card title and make up the bulk of
-                    the card's content.
-                  </Card.Text>
-                  <Button variant="primary">Go somewhere</Button>
-                </Card.Body>
+            <MyCol sm={3}>
+              <Card onClick={() => console.log('heey')} style={{ width: '100%' }}>
+                <Card.Img variant="top" src="https://picsum.photos/50/50?text=First cap" />
+                <Card.ImgOverlay className="column justify-content-end">
+                  <Card.Title>Card title</Card.Title>
+                </Card.ImgOverlay>
+
               </Card>
             </MyCol>
-            <MyCol sm={4}>
-              <Card style={{ width: '100%' }}>
-                <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
-                  <Card.Text>
-                    Some quick example text to build on the card title and make up the bulk of
-                    the card's content.
-                  </Card.Text>
-                  <Button variant="primary">Go somewhere</Button>
-                </Card.Body>
-              </Card>
-            </MyCol>
-            <MyCol sm={4}>
-              <Card style={{ width: '100%' }}>
-                <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
-                  <Card.Text>
-                    Some quick example text to build on the card title and make up the bulk of
-                    the card's content.
-                  </Card.Text>
-                  <Button variant="primary">Go somewhere</Button>
-                </Card.Body>
-              </Card>
-            </MyCol>
-            <MyCol sm={4}>
-              <Card style={{ width: '100%' }}>
-                <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
-                  <Card.Text>
-                    Some quick example text to build on the card title and make up the bulk of
-                    the card's content.
-                  </Card.Text>
-                  <Button variant="primary">Go somewhere</Button>
-                </Card.Body>
-              </Card>
-            </MyCol>
-            <MyCol sm={4}>
-              <Card style={{ width: '100%' }}>
-                <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
-                  <Card.Text>
-                    Some quick example text to build on the card title and make up the bulk of
-                    the card's content.
-                  </Card.Text>
-                  <Button variant="primary">Go somewhere</Button>
-                </Card.Body>
-              </Card>
-            </MyCol>
-            <MyCol sm={4}>
-              <Card style={{ width: '100%' }}>
-                <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
-                  <Card.Text>
-                    Some quick example text to build on the card title and make up the bulk of
-                    the card's content.
-                  </Card.Text>
-                  <Button variant="primary">Go somewhere</Button>
-                </Card.Body>
-              </Card>
-            </MyCol>
-            <MyCol sm={4}>
-              <Card style={{ width: '100%' }}>
-                <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
-                  <Card.Text>
-                    Some quick example text to build on the card title and make up the bulk of
-                    the card's content.
-                  </Card.Text>
-                  <Button variant="primary">Go somewhere</Button>
-                </Card.Body>
-              </Card>
-            </MyCol>
-            <MyCol sm={4}>
-              <Card style={{ width: '100%' }}>
-                <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
-                  <Card.Text>
-                    Some quick example text to build on the card title and make up the bulk of
-                    the card's content.
-                  </Card.Text>
-                  <Button variant="primary">Go somewhere</Button>
-                </Card.Body>
+            <MyCol sm={3}>
+              <Card onClick={() => console.log('heey')} style={{ width: '100%' }}>
+                <Card.Img variant="top" src="https://picsum.photos/50/50?text=First cap" />
+                <Card.ImgOverlay className="column justify-content-end">
+                  <Card.Title>Card title</Card.Title>
+                </Card.ImgOverlay>
+
               </Card>
             </MyCol>
           </Row>
