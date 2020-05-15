@@ -1,70 +1,32 @@
 import React from "react";
 import styled from "styled-components";
-import { Button } from "react-bootstrap";
-import { Card, Col, Row, CardGroup, Container } from 'react-bootstrap';
+import { ImageCard } from '../components/ImgCard';
+import { Row, Container, Card } from 'react-bootstrap';
+
+const ImageCardArr = [
+  { id: 1, title: 'title 1' },
+  { id: 2, title: 'title 2' },
+  { id: 3, title: 'title 3' },
+  { id: 4, title: 'title 4' },
+
+]
+
 interface DessertsProps { }
 
 export const Desserts: React.FC<DessertsProps> = ({ }) => {
 
+  const CardComponent = () => (
+
+    ImageCardArr.map((card) =>
+      <ImageCard key={card.id} />
+    )
+  )
   return (
     <Wrapper>
       <Content>
         <Container fluid >
           <Row >
-            <MyCol sm={3}>
-              <Card onClick={() => console.log('heey')} style={{ width: '100%' }}>
-                <Card.Img variant="top" src="https://picsum.photos/50/50?text=First cap" />
-                <Card.ImgOverlay className="column justify-content-end">
-                  <Card.Title>Card title</Card.Title>
-                </Card.ImgOverlay>
-
-              </Card>
-            </MyCol>
-            <MyCol sm={3}>
-              <Card onClick={() => console.log('heey')} style={{ width: '100%' }}>
-                <Card.Img variant="top" src="https://picsum.photos/50/50?text=First cap" />
-                <Card.ImgOverlay className="column justify-content-end">
-                  <Card.Title>Card title</Card.Title>
-                </Card.ImgOverlay>
-
-              </Card>
-            </MyCol>
-            <MyCol sm={3}>
-              <Card onClick={() => console.log('heey')} style={{ width: '100%' }}>
-                <Card.Img variant="top" src="https://picsum.photos/50/50?text=First cap" />
-                <Card.ImgOverlay className="column justify-content-end">
-                  <Card.Title>Card title</Card.Title>
-                </Card.ImgOverlay>
-
-              </Card>
-            </MyCol>
-            <MyCol sm={3}>
-              <Card onClick={() => console.log('heey')} style={{ width: '100%' }}>
-                <Card.Img variant="top" src="https://picsum.photos/50/50?text=First cap" />
-                <Card.ImgOverlay className="column justify-content-end">
-                  <Card.Title>Card title</Card.Title>
-                </Card.ImgOverlay>
-
-              </Card>
-            </MyCol>
-            <MyCol sm={3}>
-              <Card onClick={() => console.log('heey')} style={{ width: '100%' }}>
-                <Card.Img variant="top" src="https://picsum.photos/50/50?text=First cap" />
-                <Card.ImgOverlay className="column justify-content-end">
-                  <Card.Title>Card title</Card.Title>
-                </Card.ImgOverlay>
-
-              </Card>
-            </MyCol>
-            <MyCol sm={3}>
-              <Card onClick={() => console.log('heey')} style={{ width: '100%' }}>
-                <Card.Img variant="top" src="https://picsum.photos/50/50?text=First cap" />
-                <Card.ImgOverlay className="column justify-content-end">
-                  <Card.Title>Card title</Card.Title>
-                </Card.ImgOverlay>
-
-              </Card>
-            </MyCol>
+            {CardComponent()}
           </Row>
         </Container>
       </Content>
@@ -84,7 +46,3 @@ const Content = styled.div`
   overflow: auto;
   padding-bottom: 100px;
 `;
-const MyCol = styled(Col)`
-margin-top: 30px;
-   
-`
