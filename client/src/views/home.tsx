@@ -60,10 +60,6 @@ export const Home: React.FC<Props> = () => {
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
-                <Grid>
-
-                </Grid>
-
             </Content>
         </Wrapper>
     )
@@ -78,10 +74,3 @@ const Content = styled.div`
   width: 100%;
   overflow: auto;
 `;
-const Grid = styled.div`
-    width: 100%;
-    display: grid;
-    grid-template-columns: 100px 100px ;
-    grid-template-rows:    100px 100px ; 
-    border: 1px solid green;
-`
