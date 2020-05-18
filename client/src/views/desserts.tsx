@@ -4,10 +4,10 @@ import { ImageCard } from '../components/ImgCard';
 import { Row, Container, Card } from 'react-bootstrap';
 
 const ImageCardArr = [
-  { id: 1, title: 'title 1' },
-  { id: 2, title: 'title 2' },
-  { id: 3, title: 'title 3' },
-  { id: 4, title: 'title 4' },
+  { id: 1, title: 'title 1', img: 'https://picsum.photos/150/150?text=First' },
+  { id: 2, title: 'title 2', img: 'https://picsum.photos/150/150?text=First' },
+  { id: 3, title: 'title 3', img: 'https://picsum.photos/150/150?text=First' },
+  { id: 4, title: 'title 4', img: 'https://picsum.photos/150/150?text=First' },
 
 ]
 
@@ -18,7 +18,7 @@ export const Desserts: React.FC<DessertsProps> = ({ }) => {
   const CardComponent = () => (
 
     ImageCardArr.map((card) =>
-      <ImageCard key={card.id} />
+      <ImageCard cardImgLink={card.img} key={card.id} cardTitle={card.title} />
     )
   )
   return (
