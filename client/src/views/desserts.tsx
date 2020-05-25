@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { ImageCard } from '../components/ImgCard';
-import { Row, Container, Card } from 'react-bootstrap';
+import { Row, Container } from 'react-bootstrap';
 
 const ImageCardArr = [
   { id: 1, title: 'title 1', img: 'https://picsum.photos/150/150?text=First' },
@@ -15,19 +15,27 @@ interface DessertsProps { }
 
 export const Desserts: React.FC<DessertsProps> = ({ }) => {
 
+
+
+
+
   const CardComponent = () => (
 
     ImageCardArr.map((card) =>
-      <ImageCard cardImgLink={card.img} key={card.id} cardTitle={card.title} />
+
+      <ImageCard cardImgLink={card.img} key={card.id} cardTitle={card.title} id={card.id} />
+
     )
   )
   return (
     <Wrapper>
       <Content>
         <Container fluid >
+
           <Row >
             {CardComponent()}
           </Row>
+
         </Container>
       </Content>
 
