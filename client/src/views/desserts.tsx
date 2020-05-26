@@ -2,6 +2,14 @@ import React from "react";
 import styled from "styled-components";
 import { ImageCard } from '../components/ImgCard';
 import { Row, Container } from 'react-bootstrap';
+import {
+  useHistory,
+  useRouteMatch,
+  Switch,
+  Route
+} from 'react-router-dom'
+// sub Views
+import { DetailDessert } from "../views/desserts/detailDessert"
 
 const ImageCardArr = [
   { id: 1, title: 'title 1', img: 'https://picsum.photos/150/150?text=First' },
@@ -14,6 +22,13 @@ const ImageCardArr = [
 interface DessertsProps { }
 
 export const Desserts: React.FC<DessertsProps> = ({ }) => {
+  const history = useHistory();
+  let { path, url } = useRouteMatch();
+
+  const handleOnClick = (id: number) => {
+    const url = `/desserts/${id}`
+    history.push(url)
+  }
 
   const CardComponent = () => (
 
@@ -23,6 +38,8 @@ export const Desserts: React.FC<DessertsProps> = ({ }) => {
         key={card.id}
         cardTitle={card.title}
         id={card.id}
+        handleOnClick={handleOnClick(card.id)}
+
       />
     )
   )
@@ -33,6 +50,9 @@ export const Desserts: React.FC<DessertsProps> = ({ }) => {
           <Row >
             {CardComponent()}
           </Row>
+          <Switch>
+            <Route path={`${path}/:dessertId`} component={DetailDessert} />
+          </Switch>
         </Container>
       </Content>
     </Wrapper >

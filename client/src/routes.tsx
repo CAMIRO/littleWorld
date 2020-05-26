@@ -11,8 +11,7 @@ import { Home } from "./views/home"
 import { Desserts } from "./views/desserts";
 import { Dishes } from "./views/dishes";
 import Contact from "./views/contact";
-// sub Views
-import { DetailDessert } from "./views/desserts/detailDessert"
+
 
 interface routesProps { }
 
@@ -31,8 +30,7 @@ export const Routes: React.FC<routesProps> = ({ }) => {
         <Switch>
           <Route path="/dishes" component={Dishes} />
           <Route path="/contact" component={Contact} />
-          <Route exact path="/desserts" component={Desserts} />
-          <Route path="desserts/1" component={DetailDessert} />
+          <Route path="/desserts" component={Desserts} />
           <Route exact path="/" component={Home} />
         </Switch>
       </BodyWrapper>

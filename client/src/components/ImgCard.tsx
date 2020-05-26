@@ -1,24 +1,21 @@
 import React from 'react'
 import styled from "styled-components";
 import { Card, Col } from 'react-bootstrap';
-import { useHistory } from 'react-router-dom'
+
+
 interface ImageCardProps {
     cardTitle: string;
     cardImgLink: string;
     id: number;
+    handleOnClick: (id: number) => any
 }
-export const ImageCard: React.FC<ImageCardProps> = ({ cardImgLink, cardTitle, id }) => {
-    const history = useHistory()
+export const ImageCard: React.FC<ImageCardProps> = ({ cardImgLink, cardTitle, handleOnClick }) => {
 
-    const handleOnClick = () => {
-        const url = `/desserts/${id}`
-        history.push(url)
-    }
+
 
     return (
         <MyCol sm={3}>
-
-            <MyCard className="text-white" onClick={handleOnClick} style={{ width: '100%' }}>
+            <MyCard onClick={handleOnClick} className="text-white" style={{ width: '100%' }}>
                 <Card.Img variant="top" src={`${cardImgLink} cap`} />
                 <Card.ImgOverlay className="column justify-content-end">
                     <Card.Title >{cardTitle}</Card.Title>
