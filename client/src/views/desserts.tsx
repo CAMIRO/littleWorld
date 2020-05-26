@@ -15,31 +15,26 @@ interface DessertsProps { }
 
 export const Desserts: React.FC<DessertsProps> = ({ }) => {
 
-
-
-
-
   const CardComponent = () => (
 
     ImageCardArr.map((card) =>
-
-      <ImageCard cardImgLink={card.img} key={card.id} cardTitle={card.title} id={card.id} />
-
+      <ImageCard
+        cardImgLink={card.img}
+        key={card.id}
+        cardTitle={card.title}
+        id={card.id}
+      />
     )
   )
   return (
     <Wrapper>
       <Content>
         <Container fluid >
-
           <Row >
             {CardComponent()}
           </Row>
-
         </Container>
       </Content>
-
-
     </Wrapper >
   );
 };

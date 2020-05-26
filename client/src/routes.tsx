@@ -29,19 +29,11 @@ export const Routes: React.FC<routesProps> = ({ }) => {
       <BodyWrapper>
         <LanguageSelector />
         <Switch>
-          <Route path="/dishes">
-            <Dishes />
-          </Route>
-          <Route path="/contact">
-            <Contact />
-          </Route>
-          <Route exact path="/desserts">
-            <Desserts />
-          </Route>
-          <Route exact path="desserts/:dessertId" component={DetailDessert} />
-          <Route exact path="/">
-            <Home />
-          </Route>
+          <Route path="/dishes" component={Dishes} />
+          <Route path="/contact" component={Contact} />
+          <Route exact path="/desserts" component={Desserts} />
+          <Route path="desserts/1" component={DetailDessert} />
+          <Route exact path="/" component={Home} />
         </Switch>
       </BodyWrapper>
       <Footer />
