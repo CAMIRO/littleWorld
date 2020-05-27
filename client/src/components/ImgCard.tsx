@@ -7,7 +7,8 @@ interface ImageCardProps {
     cardTitle: string;
     cardImgLink: string;
     id: number;
-    handleOnClick: (id: number) => any
+    handleOnClick: () => void
+
 }
 export const ImageCard: React.FC<ImageCardProps> = ({ cardImgLink, cardTitle, handleOnClick }) => {
 

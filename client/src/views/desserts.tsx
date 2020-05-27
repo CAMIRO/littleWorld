@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useCallback } from "react";
 import styled from "styled-components";
 import { ImageCard } from '../components/ImgCard';
 import { Row, Container } from 'react-bootstrap';
@@ -25,10 +25,11 @@ export const Desserts: React.FC<DessertsProps> = ({ }) => {
   const history = useHistory();
   let { path, url } = useRouteMatch();
 
-  const handleOnClick = (id: number) => {
-    const url = `/desserts/${id}`
-    history.push(url)
-  }
+  const handleOnClick = useCallback(
+    () => {
+      const url = `/desserts/${1}`
+      history.push(url)
+    }, [])
 
   const CardComponent = () => (
 
@@ -38,7 +39,7 @@ export const Desserts: React.FC<DessertsProps> = ({ }) => {
         key={card.id}
         cardTitle={card.title}
         id={card.id}
-        handleOnClick={handleOnClick(card.id)}
+        handleOnClick={handleOnClick}
 
       />
     )

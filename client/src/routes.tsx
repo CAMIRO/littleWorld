@@ -30,7 +30,7 @@ export const Routes: React.FC<routesProps> = ({ }) => {
         <Switch>
           <Route path="/dishes" component={Dishes} />
           <Route path="/contact" component={Contact} />
-          <Route path="/desserts" component={Desserts} />
+          <Route exact path="/desserts" component={Desserts} />
           <Route exact path="/" component={Home} />
         </Switch>
       </BodyWrapper>
