@@ -27,8 +27,8 @@ export const Desserts: React.FC<DessertsProps> = ({ }) => {
   console.log(path)
 
   const handleOnClick = useCallback(
-    () => {
-      const url = `/desserts/${1}`
+    (id) => {
+      const url = `/desserts/${id}`
       history.push(url)
     }, [])
 
@@ -40,7 +40,7 @@ export const Desserts: React.FC<DessertsProps> = ({ }) => {
         key={card.id}
         cardTitle={card.title}
         id={card.id}
-        handleOnClick={handleOnClick}
+        handleOnClick={() => handleOnClick(card.id)}
 
       />
     )
@@ -62,6 +62,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   width: 100%;
   height: 100%;
+ 
 `;
 const Content = styled.div`
   width: 100%;
