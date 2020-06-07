@@ -8,14 +8,14 @@ import {
   Switch,
   Route
 } from 'react-router-dom'
-// sub Views
-import { DetailDessert } from "../views/desserts/detailDessert"
+
 
 const ImageCardArr = [
   { id: 1, title: 'title 1', img: 'https://picsum.photos/150/150?text=First' },
   { id: 2, title: 'title 2', img: 'https://picsum.photos/150/150?text=First' },
   { id: 3, title: 'title 3', img: 'https://picsum.photos/150/150?text=First' },
   { id: 4, title: 'title 4', img: 'https://picsum.photos/150/150?text=First' },
+
 
 ]
 
@@ -24,6 +24,7 @@ interface DessertsProps { }
 export const Desserts: React.FC<DessertsProps> = ({ }) => {
   const history = useHistory();
   let { path, url } = useRouteMatch();
+  console.log(path)
 
   const handleOnClick = useCallback(
     () => {
@@ -51,9 +52,6 @@ export const Desserts: React.FC<DessertsProps> = ({ }) => {
           <Row >
             {CardComponent()}
           </Row>
-          <Switch>
-            <Route path={`${path}/:dessertId`} component={DetailDessert} />
-          </Switch>
         </Container>
       </Content>
     </Wrapper >
