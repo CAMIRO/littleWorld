@@ -23,7 +23,7 @@ export const Home: React.FC<Props> = () => {
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
-                            src="https://picsum.photos/800/400?text=First slide&bg=373940"
+                            src="https://picsum.photos/800/250?text=First slide&bg=373940"
                             alt="First slide"
                         />
 
@@ -36,7 +36,7 @@ export const Home: React.FC<Props> = () => {
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
-                            src="https://picsum.photos/800/400?text=First slide&bg=373940"
+                            src="https://picsum.photos/800/250?text=First slide&bg=373940"
                             alt="First slide"
                         />
 
@@ -49,7 +49,7 @@ export const Home: React.FC<Props> = () => {
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
-                            src="https://picsum.photos/800/400?text=First slide&bg=373940"
+                            src="https://picsum.photos/800/250?text=First slide&bg=373940"
                             alt="First slide"
                         />
 

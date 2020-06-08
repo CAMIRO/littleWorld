@@ -14,7 +14,7 @@ export const DetailDessert: React.FC<DetailDessert> = () => {
             <Content>
                 <Container fluid >
                     <Row >
-                        <MyCol sm={8}>
+                        <MyCol lg={8}>
                             <Carousel>
                                 <Carousel.Item>
                                     <img
@@ -44,10 +44,15 @@ export const DetailDessert: React.FC<DetailDessert> = () => {
 
                                 </Carousel.Item>
                             </Carousel>
+                            <MYDivDescription>
+                                <h4>Ingredients</h4>
+                                <p>flour, lukewarm water, yeast, raisins, cranberries, citrus peel (chopped), nuts, rum, sugar, salt, ground cinnamon, eggs, butter, marzipan, butter (melted and cooled), powder sugar (for dusting)
+</p>
+                            </MYDivDescription>
                         </MyCol>
                         <MyCol>
                             <h2>Dessert Title</h2>
-                            <p>SKU: {dessertId}</p>
+                            <p>CODE: {dessertId}</p>
                             <Table striped bordered hover>
                                 <thead>
                                     <tr>
