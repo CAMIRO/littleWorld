@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import { Container, Row, Col } from 'react-bootstrap'
 import { Facebook, Instagram, Youtube } from 'react-feather';
 export const Footer: React.FC = () => {
@@ -13,15 +13,9 @@ export const Footer: React.FC = () => {
 
                 <MyCol sm={4} >
                     <Row className="justify-content-around align-items-center" >
-                        <SocialBut onClick={() => console.log('heeey')}>
-                            <Facebook color="#FFF" size={22} />
-                        </SocialBut>
-                        <SocialBut onClick={() => console.log('heeey')}>
-                            <Instagram color="#FFF" size={22} />
-                        </SocialBut>
-                        <SocialBut onClick={() => console.log('heeey')}>
-                            <Youtube color="#FFF" size={22} />
-                        </SocialBut>
+                        <MyFacebook onClick={() => window.open('https://www.facebook.com/littleworld0326', '_blank')} />
+                        <MyInstagram onClick={() => console.log('heeey')} />
+                        <MyYoutube onClick={() => console.log('heeey')} />
                     </Row>
                 </MyCol>
             </MyRow>
@@ -31,6 +25,8 @@ export const Footer: React.FC = () => {
         </MyContainer>
     )
 }
+
+
 
 const MyContainer = styled(Container)`
 background-color: #68c3c8;
@@ -59,7 +55,24 @@ text-decoration: none;
 color: #FFF;   
 }
 `
-const SocialBut = styled.a`
- background-color: 'red';
 
+//// Social Media Buttons
+
+const sharedSocialMediaIconStyle = css`
+  color: #FFF;
+ size: 22; 
+ &:hover {
+    color: #FFAD15 ;
+}
 `
+const MyFacebook = styled(Facebook)`
+${sharedSocialMediaIconStyle}
+`
+const MyInstagram = styled(Instagram)`
+${sharedSocialMediaIconStyle}
+`
+
+const MyYoutube = styled(Youtube)`
+${sharedSocialMediaIconStyle}
+`
+//// Social Media Buttons
