@@ -18,12 +18,13 @@ export const AppNavBar: React.FC = () => (
               <Text tid="homeTab" />
             </StyledLink>
           </LI>
-          <LI>
+          {/* TODO: add them as soon as we have made the views */}
+          {/* <LI>
             <StyledLink to="/dishes">Dishes</StyledLink>
           </LI>
           <LI>
-            <StyledLink to="/contact">Contact</StyledLink>
-          </LI>
+            <StyledLink to="/contact">Videos</StyledLink>
+          </LI> */}
         </ul>
       </Nav>
     </MenuContainer>
