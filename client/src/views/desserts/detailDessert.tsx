@@ -1,7 +1,9 @@
 import React from 'react';
 import { useParams } from "react-router-dom";
 import styled from 'styled-components';
-import { Row, Container, Col, Carousel } from 'react-bootstrap';
+import { Row, Container, Col, Carousel, Table, Button } from 'react-bootstrap';
+import { ShoppingBag } from 'react-feather'
+
 interface DetailDessert {
 }
 export const DetailDessert: React.FC<DetailDessert> = () => {
@@ -12,7 +14,7 @@ export const DetailDessert: React.FC<DetailDessert> = () => {
             <Content>
                 <Container fluid >
                     <Row >
-                        <MyCol sm={6}>
+                        <MyCol sm={8}>
                             <Carousel>
                                 <Carousel.Item>
                                     <img
@@ -21,10 +23,7 @@ export const DetailDessert: React.FC<DetailDessert> = () => {
                                         alt="First slide"
                                     />
 
-                                    <Carousel.Caption>
-                                        <h3>First slide label</h3>
-                                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                                    </Carousel.Caption>
+
                                 </Carousel.Item>
                                 <Carousel.Item>
                                     <img
@@ -33,10 +32,7 @@ export const DetailDessert: React.FC<DetailDessert> = () => {
                                         alt="First slide"
                                     />
 
-                                    <Carousel.Caption>
-                                        <h3>second slide label</h3>
-                                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                                    </Carousel.Caption>
+
                                 </Carousel.Item>
                                 <Carousel.Item>
                                     <img
@@ -45,15 +41,43 @@ export const DetailDessert: React.FC<DetailDessert> = () => {
                                         alt="First slide"
                                     />
 
-                                    <Carousel.Caption>
-                                        <h3>Third slide label</h3>
-                                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                                    </Carousel.Caption>
+
                                 </Carousel.Item>
                             </Carousel>
                         </MyCol>
                         <MyCol>
-                            Dessert Id: {dessertId} Nulla vitae elit libero, a pharetra augue mollis interdum.Nulla vitae elit libero, a pharetra augue mollis interdum.Nulla vitae elit libero, a pharetra augue mollis interdum.Nulla vitae elit libero, a pharetra augue mollis interdum.Nulla vitae elit libero, a pharetra augue mollis interdum.Nulla vitae elit libero, a pharetra augue mollis interdum.
+                            <h2>Dessert Title</h2>
+                            <p>SKU: {dessertId}</p>
+                            <Table striped bordered hover>
+                                <thead>
+                                    <tr>
+                                        <th>Units</th>
+                                        <th>Discount</th>
+                                        <th>Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>0</td>
+                                        <td>30 NT</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>10%</td>
+                                        <td>50 NT</td>
+                                    </tr>
+                                </tbody>
+
+                            </Table>
+                            <Button size="lg" variant="danger" onClick={() => console.log('form')}>
+                                ORDER NOW    <ShoppingBag color="#FFF" size={19} />
+                            </Button>
+                            <MYDivDescription>
+                                <h4>Description</h4>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</p>
+                            </MYDivDescription>
                         </MyCol>
                     </Row>
                 </Container>
@@ -75,6 +99,10 @@ const Content = styled.div`
 `;
 const MyCol = styled(Col)`
     margin-top: 30px;
+`
+const MYDivDescription = styled.div`
+margin-top: 30px;
+
 `
 
 

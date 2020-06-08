@@ -7,7 +7,7 @@ const GlobalStyles = createGlobalStyle`
     }
     html, body {
     height: 100%;    
-    font-family: 'Mind', Courier, 'Courier New', monospace, ;
+    font-family: 'Myriad Pro', 'Mind', Courier, 'Courier New', monospace, ;
     -webkit-overflow-scrolling: touch;
     }
 `;
