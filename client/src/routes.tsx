@@ -4,7 +4,6 @@ import ReactGa from "react-ga";
 import styled from 'styled-components'
 
 // Components
-import LanguageSelector from "./components/languageSelector";
 import { Footer } from "./components/footer"
 // Views
 import { Home } from "./views/home"
@@ -28,7 +27,6 @@ export const Routes: React.FC<routesProps> = ({ }) => {
   return (
     <Wrapper>
       <BodyWrapper>
-        <LanguageSelector />
         <Switch>
           <Route path="/dishes" component={Dishes} />
           <Route path="/contact" component={Contact} />
