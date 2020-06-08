@@ -8,7 +8,7 @@ import GlobalStyles from "./globalStyles";
 import './styles.scss'
 
 const client = new ApolloClient({
-  uri: "https://localhost:5000/graphql",
+  uri: "/graphql",
 });
 
 ReactDOM.render(
