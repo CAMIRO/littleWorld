@@ -75,7 +75,7 @@ export const DetailDessert: React.FC<DetailDessert> = () => {
                                 </tbody>
 
                             </Table>
-                            <Button size="lg" variant="danger" onClick={() => console.log('form')}>
+                            <Button block size="lg" variant="danger" onClick={() => console.log('form')}>
                                 ORDER NOW    <ShoppingBag color="#FFF" size={19} />
                             </Button>
                             <MYDivDescription>
