@@ -25,8 +25,8 @@ app.use('/graphql', graphqlHTTP({
 //     res.sendFile(path.resolve(__dirname, 'public', 'index.html'))
 // })
 
-const root = require('path').join(__dirname, 'public')
-app.use(express.static(root));
+//const root = require('path').join(__dirname, 'public')
+app.use(express.static(path.join(__dirname, 'build')));
 app.get('*', (req, res) => {
     res.sendFile('index.html', { root });
 })
