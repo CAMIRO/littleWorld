@@ -4,7 +4,6 @@ import { AppNavBar } from "./components/appNavBar";
 import { LanguageProvider } from "./containers/language";
 import { Routes } from "./routes";
 
-
 const App: React.FC = () => {
   return (
     <LanguageProvider>
